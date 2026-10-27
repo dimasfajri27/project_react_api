@@ -1,0 +1,23 @@
+import axios from "axios";
+
+const API_URL = "http://103.247.10.94:3001/api/movie"
+
+export const getAllMovie = () =>{
+    return axios.get(API_URL);
+}
+
+export const getMovieById = (id) => {
+    return axios.get(`${API_URL}/${id}`)
+}
+
+export const createMovie = (data) => {
+    return axios.post( API_URL, data)
+}
+
+export const updateMovie = (id,data) =>{
+    return axios.put(`${API_URL}/${id}`,data)
+}
+
+export const deleteMovie = (id) => {
+    return axios.delete(`${API_URL}/${id}`)
+}
