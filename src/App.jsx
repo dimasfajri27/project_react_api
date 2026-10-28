@@ -8,7 +8,7 @@
   import EditCategory from "./pages/EditKategori";
   import Movie from "./pages/Movie";
   import TambahMovie from "./pages/TambahMovies";
-  // import EditMovie from "./pages/EditMovie";
+  import EditMovie from "./pages/EditMovie";
 
 
 
@@ -25,7 +25,7 @@
           <Route path="/category/edit/:id" element={<EditCategory/>}/>
           <Route path="/movie" element={<Movie/>}/>
           <Route path="/movie/tambah" element={<TambahMovie/>}/>
-          {/* <Route path="/movie/edit/:id" element={<EditMovie />}/> */}
+          <Route path="/movie/edit/:id" element={<EditMovie />}/>
           </Routes>
         </main>
       
